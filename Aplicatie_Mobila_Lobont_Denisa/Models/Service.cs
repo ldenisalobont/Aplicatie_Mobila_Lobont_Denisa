@@ -4,7 +4,7 @@ using System.Text;
 using Aplicatie_Mobila_Lobont_Denisa.Models;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
-namespace Nume_Pren_Lab10.Models
+namespace Aplicatie_Mobila_Lobont_Denisa.Models
 {
     public class Service
     {

@@ -8,7 +8,6 @@ using Aplicatie_Mobila_Lobont_Denisa.Data;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Nume_Pren_Lab10.Models;
 
 namespace Aplicatie_Mobila_Lobont_Denisa
 {

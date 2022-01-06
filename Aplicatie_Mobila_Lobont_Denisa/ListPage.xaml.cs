@@ -8,7 +8,6 @@ using Plugin.LocalNotification;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Aplicatie_Mobila_Lobont_Denisa.Models;
-using Nume_Pren_Lab10.Models;
 
 namespace Aplicatie_Mobila_Lobont_Denisa
 {

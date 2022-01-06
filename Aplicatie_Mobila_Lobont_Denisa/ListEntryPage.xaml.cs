@@ -22,7 +22,7 @@ namespace Aplicatie_Mobila_Lobont_Denisa
             base.OnAppearing();
             listView.ItemsSource = await App.Database.GetSchedulingListsAsync();
         }
-        async void OnShopListAddedClicked(object sender, EventArgs e)
+        async void OnSchedulingListAddedClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ListPage
             {

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Aplicatie_Mobila_Lobont_Denisa.Models;
-using Nume_Pren_Lab10.Models;
 using SQLite;
 
 namespace Aplicatie_Mobila_Lobont_Denisa.Data

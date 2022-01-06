@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicatie_Mobila_Lobont_Denisa.ListEntryPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Adauga Programare" Clicked="OnShopListAddedClicked" />
+        <ToolbarItem Text="Adauga Programare" Clicked="OnSchedulingListAddedClicked" />
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView" Margin="20" ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
