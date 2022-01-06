@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicatie_Mobila_Lobont_Denisa.ListPage">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Editor Placeholder="Introduceti motivul programarii" Text="{Binding Description}" HeightRequest="100" />
+            <Entry x:Name="alege" Placeholder="Alegeti data programarii si ora:" IsEnabled="False"/>
+            <DatePicker x:Name="data_programarii" MinimumDate="01/01/2022" MaximumDate="12/12/2022"/>
+            <RadioButton GroupName="time" Content="Ora 8"/>
+            <RadioButton GroupName="time" Content="Ora 9"/>
+            <RadioButton GroupName="time" Content="Ora 10"/>
+            <RadioButton GroupName="time" Content="Ora 11"/>
+            <RadioButton GroupName="time" Content="Ora 12"/>
+            <Editor Placeholder="Introduceti adresa de email:" />
+            <Button Text="Add Service" Clicked="OnChooseButtonClicked"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save" Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButtonClicked"/>
+                <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="listView" Margin="20">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Detail="{Binding Description}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
